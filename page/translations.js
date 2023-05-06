@@ -1,9 +1,9 @@
 // this script is responsible for translations
 let lang = 'EN';
 const langParam = new URLSearchParams(window.location.search).get('lang');
-if(langParam.toUpperCase() == 'LV')
+if(langParam?.toUpperCase() == 'LV')
   lang = 'LV';
-else if(langParam.toUpperCase() == 'EN')
+else if(langParam?.toUpperCase() == 'EN')
   lang = 'EN'
 
 let translationsJson = null;
