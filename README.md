@@ -18,3 +18,6 @@ Building guide project made by Robotics students of RTU Computer science &amp; i
   
 ## Starting the server
 The server can be started by just opening terminal and typing `npm server.js` (considering the control of the terminal is inside the root of the project)
+
+## Visiting the page
+When the webserver is running, the page can be visited by typing in the browser `localhost:3000/page`
