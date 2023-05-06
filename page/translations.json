@@ -1,0 +1,26 @@
+{
+    "enter_cabinet_number": {
+        "LV": "Lūdzu, ievadiet kabineta numuru:",
+        "EN": "Please enter cabinet number:"
+    },
+    "use_elevator": {
+        "LV": "Izmantot liftu",
+        "EN": "Use elevator"
+    },
+    "search":{
+        "LV": "Meklēt",
+        "EN": "Search"
+    },
+    "start_point":{
+        "LV": "Sākumpunkts..",
+        "EN": "Start point.."
+    },
+    "end_point":{
+        "LV": "Galapunkts..",
+        "EN": "Target point.."
+    },
+    "floor":{
+        "LV": "Stāvs",
+        "EN": "Floor"
+    }
+}

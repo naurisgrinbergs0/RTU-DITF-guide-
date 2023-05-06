@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title>RTU DITF telpu ceļvedis</title>
+  </head>
+
+  <body>
+    <div class="lang-switcher">
+      <a href="./?lang=LV"><div class="flag-lv"></div></a>  
+      <a href="./?lang=EN"><div class="flag-en"></div></a>
+    </div>  
+
+    <img width="250" height="250" src="https://github.com/NoHanded/webpage/blob/main/Bildes/logo.png?raw=true"/>
+    <br/>
+
+    <p style="color: white" class="translate">enter_cabinet_number</p>
+
+    <div class="dropper">
+      <div id="start_cabinet_search_dropper" class="search-input">
+        <input type="text" id="start_cabinet" placeholder="start_point" class="translate-placeholder">
+        <div class="autocom-box" id="start_cabinet_sugg_box"><!-- here list are inserted from javascript --></div>
+      </div>
+      <div id="end_cabinet_search_dropper" class="search-input">
+        <input type="text" id="end_cabinet" placeholder="end_point" class="translate-placeholder">
+        <div class="autocom-box" id="end_cabinet_sugg_box"><!-- here list are inserted from javascript --></div>
+      </div>
+    </div>
+
+    <div style="text-align: center;">
+      <div class="form-check checkbox-lg" style="color: white; margin-bottom: 10px;">
+        <input class="form-check-input" type="checkbox" id="use_elevator_checkbox">
+        <label class="form-check-label translate" for="use_elevator_checkbox">use_elevator</label>
+      </div>
+      <button disabled id="btn-search" class="btn btn-info translate" style="width: 100px;" onclick="getDirections()">search</button>
+    </div>
+
+    <div id="main">
+      <div><span id="start_floor_text"></span></div>
+      <div class="plan-container"><img id="start_floor_img"/></div>
+      <div><span id="end_floor_text"></span></div>
+      <div class="plan-container"><img id="end_floor_img"/></div>
+      <div><ol id="instructions"></ol></div>
+    </div>
+
+    <script src="script_dropdown.js"></script> 
+    <script src="translations.js"></script> 
+    <script src="script_api.js"></script>
+  </body>
+</html>
