@@ -17,7 +17,7 @@ Building guide project made by Robotics students of RTU Computer science &amp; i
   2.3. You can see the required packages (in terminal) after pressing "Search" button in the webpage.
   
 ## Starting the server
-The server can be started by just opening terminal and typing `npm server.js` (considering the control of the terminal is inside the root of the project)
+The server can be started by just opening terminal and typing `node server.js` (considering the control of the terminal is inside the root of the project)
 
 ## Visiting the page
 When the webserver is running, the page can be visited by typing in the browser `localhost:3000/page`
